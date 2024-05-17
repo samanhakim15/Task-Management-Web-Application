@@ -1,0 +1,17 @@
+<div class="centered-content">
+  <div class="task-list-container">
+      <h1 class="title text-primary">List of Tasks :</h1>
+      <div class="task"  *ngFor="let list of lists">
+          <p>{{list.List_name}}</p>
+          <div class="task-icons">
+            <div class="task-delete"  (click)="ondeleteTask(list.id)">
+              <i class="fas fa-trash-alt"></i>
+            </div>
+            <div class="task-update" [routerLink]="['/lists',list.id,'update-task']">
+              <i class="fas fa-edit"></i>
+            </div>
+          </div>
+      </div>
+      <button class="btn" routerLink="/new-task">+ New Task</button>
+  </div>
+</div>

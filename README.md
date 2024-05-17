@@ -1,3 +1,20 @@
+Task Manager Web Application
+
+This web application allows users to manage their tasks effectively. Users can create new tasks, update existing tasks, delete tasks, and view their task lists.
+
+Features
+Create new tasks
+Update existing tasks
+Delete tasks
+View task lists
+Technologies Used
+Angular: Frontend framework for building the user interface
+Node.js: Backend runtime environment
+Express.js: Web application framework for Node.js
+MySQL: Relational database management system
+CSS: for styling
+
+
 # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.

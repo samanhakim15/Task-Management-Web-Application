@@ -1,0 +1,15 @@
+<div class="centered-content">
+  <div class="modal-box">
+    <div class="title">
+      Update Task
+      <form class="form-box">
+          <label for="updateInputBox"></label>
+          <input #updateInputBox type="text" id="updateInputBox" name="updateInputBox" placeholder="Enter updated task..." required>
+          <div class="button-group">
+            <button type="button" routerLink="/">Go Back</button>
+            <button class="submit" (click)="updateTask(updateInputBox.value)">Update</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
