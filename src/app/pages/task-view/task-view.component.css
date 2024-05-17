@@ -1,13 +1,12 @@
-
 .task-manager-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   max-width: 1000px;
-  max-height: 680px;
   background: white;
 }
-
 
 .task-list-container {
   display: flex;
@@ -18,11 +17,10 @@
   background: gainsboro;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-
 }
 
 .title {
-  font-family: lato;
+  font-family: Lato, sans-serif;
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -30,38 +28,10 @@
 
 .task {
   background: white;
-  padding: 2px 20px;
+  padding: 10px 20px;
   border-radius: 5px;
   margin-top: 10px;
   color: #5f5f5f;
-
-    &:hover {
-      box-shadow: 0 0 0 5px #eee;
-
-      .task-icons{
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-  }
-  .task-icons{
-    transition: opacity 0.2s, transform0.2s;
-    opacity: 0;
-    transform: scale(0.5);
-  }
-
-
-.btn {
-  background-color: #40E0D0;
-  color: white;
-  padding: 10px 10px;
-  margin: 15px 0;
-  border: none;
-  border-radius: 5px;
-  display: inline-block;
-}
-.task {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,6 +45,7 @@
 .task-icons i {
   margin-left: 10px;
 }
+
 .task-delete i {
   color: rgb(188, 20, 20);
 }
@@ -83,4 +54,31 @@
   color: #17c9b7;
 }
 
+.btn {
+  background-color: #40E0D0;
+  color: white;
+  padding: 10px 20px; 
+  margin: 15px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+.btn:hover {
+  background-color: #17c9b7;
+}
+
+.task:hover {
+  box-shadow: 0 0 0 5px #eee;
+
+  .task-icons {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.task-icons {
+  transition: opacity 0.2s, transform 0.2s;
+  opacity: 0;
+  transform: scale(0.5);
+}
